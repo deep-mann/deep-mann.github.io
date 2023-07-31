@@ -1,0 +1,36 @@
+.imgContainer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #50617a;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    max-width: fit-content;
+    max-height: fit-content;
+    gap: 5px
+}
+
+.imgContainerElement
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3f4d61;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.imgContainerText
+{
+    color: #14d18c;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 5px;
+}
+
+.imgContainerImg
+{
+    background-color: #3f4d61;
+    padding: 5px;
+    border-radius: 15px;
+}
