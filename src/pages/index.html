@@ -20,19 +20,16 @@
   <body>
         <div id="woroks">
           <std-text>Enter the password you recieved:
-            <div class="divider"></div>
             <std-text>
-              <input type="text" id="password"> probably <br>
-              <input type="submit" onclick="if(document.getElementById('password').value=='nuyorkjames') {document.getElementById('passwordreciever').innerHTML='cheetodust'}">
+              <input type="text" id="password"> <br>
+              <input type="submit" onclick="if(document.getElementById('password').value=='nuyorkjames') {document.getElementById('passwordreciever').innerHTML='ZIP Password:cheetodust <br> instructions: after you won, you downloaded a zip file. inside this zip file is another zip file with the name trueprize.zip. you might have tried to open this but saw it was password protected. the password to this zip is gonna be cheetodust'}"><br><br>
+              <std-text id="passwordreciever"></std-text>
             </std-text> 
-          </std-text>
-          <std-text id="passwordreciever">
-
           </std-text>
         </div>
         
         <div id="chets">
-
+          <std-text> sory.. you cant access this yet.. try coming back after 5pm</std-text>
         </div>
     <!-- Custom element scripts -->
     <script src="../js/stdtext.js"> </script>
@@ -40,7 +37,7 @@
     <script>
       let rn = new Date();
       let hour = rn.getHours();
-      if(hour >= 13)
+      if(hour >= 17)
       {
         document.getElementById("chets").remove();
       }
