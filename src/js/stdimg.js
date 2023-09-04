@@ -14,9 +14,6 @@ class stdimg extends HTMLElement
         this.innerHTML = `     
         <div class="imgContainer">
             <img class="imgContainerImg" src=${src} height=${this.attributes.height.value} width=${this.attributes.width.value} alt=${alt}> <img>
-            <div class="imgContainerElement"> 
-                <p class="imgContainerText"> ${caption} </p>
-            </div>
         </div>
         `
     }
