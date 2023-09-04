@@ -3,153 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" />
-    <meta name="keywords" content="computers, pc, cpu, gpu, ram, motherboard, computer, technology, electronics"/>
+    <meta name="keywords" content="laurance torture"/>
     <meta http-equiv="Expires" content="0" />
-    <meta name="copyright" content="This site and its pages are Copyright 2022 by Deepinder Websites Co. All Rights Reserved."/>
-    <title> Home </title>
+    <title>WWWWWWWWWWW</title>
    
-    <!-- Split into different files for easier management, although loading will be a bit slower -->
     <link rel="stylesheet" href="../styles/style.css?jas" type="text/css">
     <link rel="stylesheet" href="../styles/stdimg.css?jas" type="text/css">
     <link rel="stylesheet" href="../styles/navbar.css?jas" type="text/css"> 
     <link rel="stylesheet" href="../styles/stdtext.css?jas" type="text/css">
     <link rel="icon" href="../../assets/icon.svg?jas" type="text/css">
-
-    <!-- The font -->
+    
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
     </style>
   </head>
-  
-  <body onload = "init()">
-
-    <div class="content">
-      <div class="divider"> </div>
-
-      <div class="outerContainer">
-        <h1 class="header"> empty </h1>
-          <std-text style="align-self:center"> go thru all the questions one by one... once you complete all of them you will recieve the 10-digit number that you give to me for your bday gift</std-text>
-
-          <div class="innerContainer">
-            <std-text> Question 1: State the 4-digit number that appears somewhere within this 30-second audio clip.
-              <div class="divider"> </div>
-              
-              <audio controls>
-                <source src="../../assets/sample-3s.mp3" type="audio/mpeg">
-              </audio>
-              <div class="divider"> </div>
-
-              <std-text>
-                Enter your number:
-                <input type="text" id="1_dreammask"> 
-                <input type="submit" onclick="if(document.getElementById('1_dreammask').value==4534) {goNext(0);}"> 
-              </std-text> 
-            </std-text>
-          </div>
-
-          <div class="innerContainer" id="fid0">
-            <std-text> Question 2: Solve the following math problem. Upload the work that you did for verification. 
-              <std-img src="../../assets/mathproblem.jpg" height=184 width=718 alt="math problem"> </std-img>
-              <std-text>
-                Enter your answer:
-                <input type="text" id="2_mathproblem"> 
-                <input type="submit" onclick="if(document.getElementById('2_mathproblem').value==4534) {goNext(1);}"> 
-              </std-text> 
-            </std-text>
-          </div>
-
-          <div class="innerContainer" id="fid1">
-            <std-text>How many times was Rasmeet's name said by Lomax in the original discord GC? 
+  <body>
+        <div id="woroks">
+          <std-text>Enter the password you recieved:
             <div class="divider"></div>
             <std-text>
-              Enter your response:
-              <input type="text" id="3_chart"> 
-              <input type="submit" onclick="if(document.getElementById('3_chart').value==4534) {goNext(2);}"> 
+              <input type="text" id="password"> probably <br>
+              <input type="submit" onclick="if(document.getElementById('password').value=='nuyorkjames') {document.getElementById('passwordreciever').innerHTML='cheetodust'}">
             </std-text> 
-            <div class="innerContainer" id="fid2">
-              <std-text>
-                Who requested this statistic?
-              </std-text>
-              <input type="radio" id="reqly" name="who" value="ly">
-              <label for="reqly">Laurance huang did. I am laurance huang. i acknowledge i asked for this statistic (laugh at me!!!!!!)</label><br>
-              <input type="radio" id="reqdeep" name="who" value="deep">
-              <label for="reqdeep">deepinder did (i am projecting)</label><br>
-              <input type="radio" id="reqo" name="who" value="other">
-              <label for="reqo">idk</label><br>
-              <div class="divider"></div>
-              <input type="submit" onclick="if(document.getElementById('reqly').checked){goNext(3);}"> 
-            </div>
-            </std-text>
-          </div>
+          </std-text>
+          <std-text id="passwordreciever">
 
-          <div class="innerContainer" id="fid3">
-            <std-text>What sequence of four letters, a space, and five more letters was said on 10/17/2021 in discord DMs at exactly 10:41 PM by lluuully? <br> (Hint: All caps). Answer should be case sensitive. 
-              <div class="divider"> </div>
-              <std-text>
-                Enter your answer:
-                <input type="text" id="4_holyahit"> 
-                <input type="submit" onclick="if(document.getElementById('4_holyahit').value=='HOLY AHIT') {goNext(4);}"> 
-              </std-text>
-            </std-text>
-          </div>
+          </std-text>
+        </div>
+        
+        <div id="chets">
 
-          <div class="innerContainer" id="fid4">
-            <std-text>
-              Ye
-            </std-text>
-          </div>
-      </div>
-
-      <div class="divider"> </div>
-      <address>
-        © 2023 <a href="https://github.com/deep-mann/deep-mann.github.io" style="color:#14181f"> github </a>. dmann at <a href="deepinder.mann2024@gmail.com" style="color:#14181f"> deepinder.mann2024@gmail.com</a>
-      </address>
-    </div>
-
-    <script>
-        var idcounter = 0;
-        function fadein(id) 
-        {
-            element = document.getElementById(id)
-            console.log(element.innerHTML);
-            var op = 0.1;  // initial opacity
-            element.style.display = 'block';
-            var timer = setInterval(function () {
-                if (op >= 1)
-                {
-                    clearInterval(timer);
-                }
-                element.style.opacity = op;
-                element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-                op += op * 0.1;
-            }, 10);
-        }
-        function goNext(fid)
-        {
-          if(idcounter == fid)
-          {
-            fadein("fid"+idcounter);
-            idcounter++;
-          }
-        }
-        function init()
-        {
-          innercontainers = document.getElementsByClassName("innerContainer");
-          containerArray = Array.from(innercontainers);
-          console.log(containerArray);
-          containerArray.forEach(element => {
-            console.log(element.id);
-            if(element.id.startsWith("fid"))
-            {
-              element.style.opacity = 0;
-              element.style.display = "none";
-            }
-          });
-        }
-    </script>
-
+        </div>
     <!-- Custom element scripts -->
     <script src="../js/stdtext.js"> </script>
     <script src="../js/stdimg.js"></script>
+    <script>
+      let rn = new Date();
+      let hour = rn.getHours();
+      if(hour >= 13)
+      {
+        document.getElementById("chets").remove();
+      }
+      else {
+        document.getElementById("woroks").remove();
+      }
+    </script>
   </body>
 </html>
